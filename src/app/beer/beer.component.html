@@ -1,0 +1,18 @@
+<div class="card-columns">
+  <div *ngFor="let beer of beers; let last = last" class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4 mx-auto text-center">
+        <img [src]="beer.image_url" class="card-img" alt="beer image">
+      </div>
+      <div class="col-md-8 text-center">
+        <div class="card-body">
+          <a class="green-anchor" [routerLink]="['/beer', beer.id]">
+            <h5 class="card-title">{{beer.name}}</h5>
+          </a>
+          <p class="card-text trim-text">ABV: {{beer.abv}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

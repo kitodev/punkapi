@@ -1,0 +1,32 @@
+$color: #00D1B2;
+
+img {
+  max-height: 100px;
+  width: auto;
+  margin: 40% 0;
+}
+
+.trim-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* number of lines to show */
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: $color;
+}
+
+.form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+form {
+  width: 70%;
+  margin: 5% auto;
+}

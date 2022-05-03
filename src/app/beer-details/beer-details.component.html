@@ -1,0 +1,26 @@
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{ beer.name }}
+    </p>
+  </header>
+  <div class="card-image">
+    <figure class="image  is-square">
+      <img [src]="beer.image_url" alt="Image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <h5>Description</h5>
+    <div class="content">
+      {{ beer.description }}
+      <br>
+    </div>
+    <div>
+      <h5>ABV:</h5> {{ beer.abv }} %</div>
+      <div><h5>Food pairing: </h5>
+        <ul>
+          <li *ngFor="let item of beer.food_pairing; let i = index">{{ item }}</li>
+        </ul></div>
+  </div>
+
+</div>
